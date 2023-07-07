@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Covid-19</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <section class="main">
+            <img src="./images/covid3d.png" alt="Imagem do vírus em 3D" class="imagem__virus">
+            <h1>Situação da COVID-19</h1>
+            <p>À medida que a COVID-19 continua a impactar o mundo, manter-se informado é a nossa principal arma contra o vírus. </p>
+            <a href="https://github.com/KaianNovais"> <img src="./images/logoXP.png" alt="Logo da XP" class="logo__xp"> Por: Kaian Novais</a>
+            
+        </section>
+        <img class="imagem__grafico" src="./images/covid.png" alt="Imagem ilustrativa do gráfico da covid">
+        
+    </header>
+    <section class="textos__informativos">
+        <div class="cards">
+            <img src="./images/dados1.png" alt="" class="imagem__informativa">
+            <h3>O Poder dos Dados Atualizados</h3>
+            <p class="texto__informativo">
+                Estar atualizado sobre a COVID-19 é a chave para entender como o vírus está se espalhando e como podemos impedir sua transmissão.
+            </p>
+        </div>
+        <div class="cards">
+            <img src="./images/dados2.png" alt="" class="imagem__informativa">
+            <h3>O Poder dos Dados Atualizados</h3>
+            <p class="texto__informativo">
+                Estar atualizado sobre a COVID-19 é a chave para entender como o vírus está se espalhando e como podemos impedir sua transmissão.
+            </p>
+        </div>
+        <div class="cards">
+            <img src="./images/dados3.png" alt="" class="imagem__informativa">
+            <h3>O Poder dos Dados Atualizados</h3>
+            <p class="texto__informativo">
+                Estar atualizado sobre a COVID-19 é a chave para entender como o vírus está se espalhando e como podemos impedir sua transmissão.
+            </p>
+        </div>
+    </section>
+    <main>
+        <h2>Explore os detalhes por país:</h2>
+        <section class="search">
+            <div class="form">
+                <form id="search-form">
+                    <label for="">Insira o código ISO do país de interesse:</label>
+                    <input type="text" id="country" placeholder="Country ISO Code">
+                    <label for="">Forneça uma data:</label>
+                    <input type="date" id="date">
+                    <button type="submit">Pesquisar</button>
+                </form>
+            </div>
+            <div class="chart">
+                <canvas id="chart-container"></canvas>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+         <img src="./images/logoXP.png" alt="Logo da XP" class="logo__xp"> <h4>Por: Kaian Novais</h4>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./js/fetchData.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
